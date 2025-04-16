@@ -13,3 +13,8 @@
     https://code.visualstudio.com/docs/java/java-testing#_next-steps
 
 -To actually run the test, i went to the Test runner java extension (the little beaker), and pressed the arrow icon next to the question2 folder
+
+
+or 
+run javac -cp "lib/*" -d out src/*.java test/*.java
+then 

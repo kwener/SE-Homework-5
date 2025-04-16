@@ -1,0 +1,4 @@
+-navigate to question3 file
+-run  javac -cp "lib/*" -d out src/*.java test/*.java in CLI
+-then run java -cp "out:lib/*" org.junit.runner.JUnitCore ServicesDecoratorTest
+
