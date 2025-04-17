@@ -17,4 +17,4 @@
 
 or 
 run javac -cp "lib/*" -d out src/*.java test/*.java
-then 
+then java -cp "out:lib/*" org.junit.runner.JUnitCore RideServiceFacadeTest
