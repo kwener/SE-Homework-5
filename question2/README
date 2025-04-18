@@ -1,20 +1,7 @@
--In this project, I am not using any build tools (like maven or gradle), and i am working in VSCode
-    -In vscode, the Test Runner extension for java must be downloaded
+ dependencies:
+ junit-4.13.2.jar
+ hamcrest-core-1.3.jar
 
-    -junit.jar and hamcrest-core.jar must be downloaded. I did so through the "Testing" icon on the left bar in VSCode
-        -The is an option to "Enable java testing", when i then selected the option to use junit and the lib folder/dependencies were installed automatically
-        -I then updated my dependencies in the settings.json file with the line   
-          "java.project.referencedLibraries":[
-        "lib/**/*.jar"
-        ]
-
--If you are running this code with Maven or Gradle, please ensure that you add junit to your dependencies
-    -in pom.xml for maven and build.gradle for gradle
-    https://code.visualstudio.com/docs/java/java-testing#_next-steps
-
--To actually run the test, i went to the Test runner java extension (the little beaker), and pressed the arrow icon next to the question2 folder
-
-
-or 
+ navigate to question2 folder then run
 run javac -cp "lib/*" -d out src/*.java test/*.java
 then java -cp "out:lib/*" org.junit.runner.JUnitCore RideServiceFacadeTest
