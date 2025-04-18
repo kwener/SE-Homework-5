@@ -1,0 +1,2 @@
+run javac -cp "lib/*" -d out src/*.java test/*.java
+then javac -cp "lib/*:bin" -d bin test/CityDecoratorTest.java
