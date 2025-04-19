@@ -1,5 +1,5 @@
-
 import org.junit.Test;
+
 import static org.junit.Assert.*;
 
 import java.util.ArrayList;
@@ -38,7 +38,7 @@ public class RideCouponServiceTest {
         service.notifyRiders("Save 10%");
 
         assertEquals(1, rider.getReceivedCoupons().size());
-        assertEquals("Save 10%", rider.getReceivedCoupons().get(0));
+        assertEquals("Save 10%", rider.getReceivedCoupons().getFirst());
     }
 
     @Test
@@ -52,9 +52,9 @@ public class RideCouponServiceTest {
         service.notifyRiders("Get 20% off");
 
         assertEquals(1, rider1.getReceivedCoupons().size());
-        assertEquals("Get 20% off", rider1.getReceivedCoupons().get(0));
+        assertEquals("Get 20% off", rider1.getReceivedCoupons().getFirst());
         assertEquals(1, rider2.getReceivedCoupons().size());
-        assertEquals("Get 20% off", rider2.getReceivedCoupons().get(0));
+        assertEquals("Get 20% off", rider2.getReceivedCoupons().getFirst());
     }
 
     @Test
@@ -71,7 +71,7 @@ public class RideCouponServiceTest {
 
         assertEquals(0, rider1.getReceivedCoupons().size());
         assertEquals(1, rider2.getReceivedCoupons().size());
-        assertEquals("Weekend Deal", rider2.getReceivedCoupons().get(0));
+        assertEquals("Weekend Deal", rider2.getReceivedCoupons().getFirst());
     }
 
     @Test
